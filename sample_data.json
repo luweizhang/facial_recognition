@@ -1,0 +1,281 @@
+{
+    "paging": {
+        "count": 10,
+        "start": 10,
+        "links": [
+            {
+                "href": "/jobsForYou/sourceMemberId=164883249?doNotServeResultsFromCache=true&q=jobsForYou&iAmWillingToWaitForResultComputationIfCacheMisses=true&includePreferencesInMetadata=true&start=0&count=10&decorateResults=true",
+                "type": "application/json",
+                "rel": "prev"
+            },
+            {
+                "href": "/jobsForYou/sourceMemberId=164883249?doNotServeResultsFromCache=true&q=jobsForYou&iAmWillingToWaitForResultComputationIfCacheMisses=true&includePreferencesInMetadata=true&start=20&count=10&decorateResults=true",
+                "type": "application/json",
+                "rel": "next"
+            }
+        ]
+    },
+    "elements": [
+        {
+            "decoration": {
+                "industries": [
+                    28
+                ],
+                "companyLogo": "/p/7/005/085/1c4/1850961.png",
+                "companyName": "PennyPop",
+                "locationDescription": "San Francisco",
+                "companyId": 3876393,
+                "jobDescriptionSnippet": "We\u2019re seeking a data junkie with a passion for growing our user base and expanding our audience. \u00a0You have a passion for looking at data, making connections to optimization and a strong desire to actually take action on your analysis. You have a side passion for all things technical. Whether you're experienced in mobile analytics or come from the financial industry, at the core of this role is doi",
+                "title": "Data Analyst",
+                "id": 113082567
+            },
+            "hit": {
+                "urn": "urn:li:jobPosting:113082567",
+                "score": 0.61429469999999997,
+                "id": 113082567
+            }
+        },
+        {
+            "decoration": {
+                "industries": [
+                    6
+                ],
+                "companyLogo": "/AAEAAQAAAAAAAAXVAAAAJDhiNDEwMGUyLThmMDYtNDUwYS04YmEwLTNmMGI0NDJmNmQ4Nw.png",
+                "companyName": "Beepi",
+                "locationDescription": "San Francisco Bay Area",
+                "companyId": 3343148,
+                "externalApplyUrl": "http://grnh.se/b3wf4q",
+                "jobDescriptionSnippet": "Beepi is the fastest growing marketplace to buy and sell cars 100% online. For buyers, Beepi makes their #2 most important purchase an easy and simple decision. For sellers, we offer a process that defies anything else out in the market with guaranteed pricing and lightning-quick practices. We truly strive to give customers that warm, fuzzy feeling. To do this efficiently, we are building a 100% p",
+                "title": "Data Analyst, Pricing",
+                "id": 111532435
+            },
+            "hit": {
+                "urn": "urn:li:jobPosting:111532435",
+                "score": 0.49964989999999998,
+                "id": 111532435
+            }
+        },
+        {
+            "decoration": {
+                "industries": [
+                    6
+                ],
+                "companyLogo": "/AAEAAQAAAAAAAAYFAAAAJDNjMDgxMGQ2LTcxZjMtNDdmMS1iM2U3LTNiODMyN2ZkOWE1Mg.png",
+                "companyName": "App Annie",
+                "locationDescription": "San Francisco",
+                "companyId": 1264070,
+                "externalApplyUrl": "https://app.jobvite.com/CompanyJobs/Careers.aspx?k=Apply&j=o39L2fwJ&s=linkedIn",
+                "jobDescriptionSnippet": "We are seeking an aspiring data analyst and engineer with a passion for the end to end value of the data lifecycle. The BI Analyst will support all of our internal teams\u2019 analytics needs by designing data schemas and performing analysis on a variety of data sources. This role will work cross-functionally with the BI, Product, Sales, and Marketing teams. Your resulting insights and data structures ",
+                "title": "Business Intelligence Analyst",
+                "id": 111551416
+            },
+            "hit": {
+                "urn": "urn:li:jobPosting:111551416",
+                "score": 0.49960715,
+                "id": 111551416
+            }
+        },
+        {
+            "decoration": {
+                "industries": [
+                    18,
+                    25,
+                    27
+                ],
+                "companyLogo": "/AAEAAQAAAAAAAAQqAAAAJDM0NTllYzFmLWE5NWEtNGUyZi04MTI5LWNkNDEwYTZjZmM3Yw.png",
+                "companyName": "Perricone MD",
+                "locationDescription": "Downtown San Francisco ",
+                "campaignId": 121938084,
+                "jobDescriptionSnippet": "The Opportunity: The Data Analyst performs a variety of tasks related to collecting, organizing and statistical analysis of customer and sales data from digital platforms. The data analyst will be responsible for inspecting, transforming and modeling data, predominantly using the AgilOne analytics platform and google analytics. \u00a0 The Assignment Perform data quality assessments, system analysis, an",
+                "companyId": 1191031,
+                "title": "CRM Data Analyst",
+                "id": 113020220
+            },
+            "hit": {
+                "urn": "urn:li:jobPosting:113020220",
+                "score": 0.49957513999999997,
+                "id": 113020220
+            }
+        },
+        {
+            "decoration": {
+                "industries": [
+                    43
+                ],
+                "companyLogo": "/AAEAAQAAAAAAAAXwAAAAJDRiZjRlN2Y1LTNmNzItNGIyNS1hNjYwLTJmOWVjMzM2NmRhMg.png",
+                "companyName": "Square",
+                "locationDescription": "San Francisco",
+                "companyId": 675562,
+                "externalApplyUrl": "https://www.smartrecruiters.com/Square/90534924-senior-data-engineer",
+                "jobDescriptionSnippet": "At Square, data powers all the decisions we make at Square.  Data at Square is the secret sauce to the company\u2019s growth potentials.  Combination of the financial industry standards and the fast growing mobile application usage makes data flow at Square complex and challenging.  Our Core Data Analytics team, which includes data science and engineering, is looking for a Senior Data Engineer to build",
+                "title": "Senior Data Engineer",
+                "id": 111587286
+            },
+            "hit": {
+                "urn": "urn:li:jobPosting:111587286",
+                "score": 0.49934637999999998,
+                "id": 111587286
+            }
+        },
+        {
+            "decoration": {
+                "industries": [
+                    4,
+                    137,
+                    6
+                ],
+                "companyLogo": "/AAEAAQAAAAAAAAeWAAAAJDFjYjgzMWM1LTFmNWQtNDkyOC04ZDAxLTk2Mjg1MmQzNzQ5ZA.png",
+                "companyName": "Castlight Health",
+                "locationDescription": "San Francisco, CA US",
+                "companyId": 978813,
+                "externalApplyUrl": "http://jobs.castlighthealth.com/ShowJob/Id/779414/Data-Management-Architect/?&s=LinkedIn",
+                "jobDescriptionSnippet": "About Castlight  Castlight Health is the leading provider of cloud-based software that enables enterprises to understand and manage healthcare spending as a business investment, and helps employees and their families make medical decisions. The company's Enterprise Healthcare Cloud makes healthcare information transparent and useful to employees, with technology-enabled benefit designs and integra",
+                "title": "Data Management Architect",
+                "id": 111528259
+            },
+            "hit": {
+                "urn": "urn:li:jobPosting:111528259",
+                "score": 0.49906220000000001,
+                "id": 111528259
+            }
+        },
+        {
+            "decoration": {
+                "industries": [
+                    4,
+                    24,
+                    124
+                ],
+                "companyLogo": "/AAEAAQAAAAAAAAavAAAAJGI4MWE4Zjk4LTk0ZDAtNDIxZC05ZmY5LTUxNzAyM2E4NGMzYw.png",
+                "companyName": "Fitbit",
+                "locationDescription": "San Francisco, CA, US",
+                "companyId": 1132117,
+                "externalApplyUrl": "http://app.jobvite.com/CompanyJobs/Careers.aspx?c=q8p9Vfwl&j=oJ9G1fwj&k=Apply&s=LinkedIn",
+                "jobDescriptionSnippet": "At Fitbit, our mission is to help people lead healthier, more active lives by empowering them with data, inspiration and guidance to reach their goals.We started our journey in 2007\u2014as a team of two with one big idea. Today, that idea has become a movement. Fitbit is now a publicly-traded company creating award-winning products and services that are available across the globe. We\u2019re transforming t",
+                "title": "Lead Data Scientist",
+                "id": 78964317
+            },
+            "hit": {
+                "urn": "urn:li:jobPosting:78964317",
+                "score": 0.46069533000000001,
+                "id": 78964317
+            }
+        },
+        {
+            "decoration": {
+                "industries": [
+                    4,
+                    96,
+                    6
+                ],
+                "companyLogo": "/AAEAAQAAAAAAAALyAAAAJGQ3MTc0YWVmLTljYWEtNDBiZC1iMGE1LWJlZGY1MDI5NzU3YQ.png",
+                "companyName": "Dropbox",
+                "locationDescription": "San Francisco , CA",
+                "companyId": 167251,
+                "externalApplyUrl": "https://www.dropbox.com/jobs/listing/165555?gh_src=aonhf1&gh_jid=165555",
+                "jobDescriptionSnippet": "Team Description  The Insights team is the analytics engine behind our global sales organization. We are leveraging the power of big data to help our customers accelerate how they transform their business. As a collaborative and empathetic team, we focus on finding breakthrough insights in a creative and fun environment .  Roles and responsibility    Research, design, implement, and validate leadi",
+                "title": "Data Scientist - Insights Team",
+                "id": 111564240
+            },
+            "hit": {
+                "urn": "urn:li:jobPosting:111564240",
+                "score": 0.42224390000000001,
+                "id": 111564240
+            }
+        },
+        {
+            "decoration": {
+                "industries": [
+                    4,
+                    6
+                ],
+                "companyLogo": "/AAEAAQAAAAAAAAacAAAAJDU2OTk3ODQ0LWRhMDAtNGI2YS1hNTUwLTEyMmYwMzFkMDRmYQ.png",
+                "companyName": "StubHub",
+                "locationDescription": "San Francisco, CA",
+                "companyId": 10061,
+                "externalApplyUrl": "http://track.tmpservice.com/ApplyClick.aspx?id=2354959-2166-4345",
+                "jobDescriptionSnippet": "Manage the Data Science team, which is responsible for developing empirically-based algorithms that can be scaled for applications in Fraud Detection, Personalization, Ticket Recommendations, and other high-return-on-effort applications as they arise. Manage your direct reports to continually develop and apply skills relevant to the space, including machine learning and statistical modeling techni",
+                "title": "Sr. Data Science Manager",
+                "id": 108997175
+            },
+            "hit": {
+                "urn": "urn:li:jobPosting:108997175",
+                "score": 0.36407240000000002,
+                "id": 108997175
+            }
+        },
+        {
+            "decoration": {
+                "industries": [
+                    24
+                ],
+                "companyLogo": "/p/1/000/2bc/329/09e8946.png",
+                "companyName": "Apple",
+                "locationDescription": "SF - Corporate - California  -US",
+                "companyId": 162479,
+                "externalApplyUrl": "https://jobs.apple.com/us/search?job=44374201&openJobId=44374201&board_id=17682",
+                "jobDescriptionSnippet": "Apple\u2019s exciting new Spotlight Suggestions service provides fast, relevant search results from the Internet in Spotlight and Safari on iOS and OS X. We are looking for an innovative &amp; detail-oriented Data Scientist who will play a central role in developing upcoming versions of the feature. The Spotlight Suggestions service is built on massive amount of data crawled from the Internet, sourced ",
+                "title": "Data Scientist",
+                "id": 104818439
+            },
+            "hit": {
+                "urn": "urn:li:jobPosting:104818439",
+                "score": 0.30670226,
+                "id": 104818439
+            }
+        }
+    ],
+    "metadata": {
+        "sourceUrn": "urn:li:member:164883249",
+        "algorithmId": "liar_jfu_90143",
+        "moreServableResultsAvailable": true,
+        "preferences": {
+            "lastModified": 1455909464046,
+            "fields": [
+                {
+                    "terms": {
+                        "PLACES.us.7-1-0-38-1": 1.0
+                    },
+                    "name": "LOCATION"
+                },
+                {
+                    "terms": {
+                        "C": 1.0,
+                        "B": 1.0,
+                        "E": 1.0,
+                        "D": 1.0,
+                        "G": 1.0,
+                        "F": 1.0,
+                        "I": 1.0,
+                        "H": 1.0
+                    },
+                    "name": "COMPANY_SIZE"
+                },
+                {
+                    "terms": {
+                        "1": 1.0,
+                        "3": 1.0,
+                        "2": 1.0,
+                        "5": 1.0,
+                        "4": 1.0,
+                        "7": 1.0,
+                        "6": 1.0,
+                        "9": 1.0,
+                        "8": 1.0
+                    },
+                    "name": "SENIORITY"
+                }
+            ]
+        },
+        "sourceId": 164883249,
+        "sessionId": "e261e23f-119c-4f93-b13a-1fd70b54c041",
+        "version": 90143,
+        "intent": "JOBS_FOR_YOU",
+        "trackingId": "0f18bd06-e1d6-4f40-93d5-736373a14ff2",
+        "inProgress": false,
+        "resultsMatchPreferences": true
+    }
+}
+
+
+

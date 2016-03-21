@@ -1,83 +1,3 @@
-/* Update the relevant fields with the new data */
-function setDOMInfo(info) {
-    document.getElementById('total').textContent   = info.total;
-   // document.getElementById('inputs').textContent  = info.inputs;
-    //document.getElementById('buttons').textContent = info.buttons;
-    document.getElementById('mypicture').src = info.total;
-
-
-
- (function() {
-        console.log(document.getElementById('mypicture').src);
-        var myimageurl = document.getElementById('mypicture').src
-        var api = new FacePP('0ef14fa726ce34d820c5a44e57fef470', '4Y9YXOMSDvqu1Ompn9NSpNwWQFHs1hYD');
-        api.request('detection/detect', {
-          url: myimageurl
-        }, function(err, result) {
-          if (err) {
-            // TODO handle error
-            return;
-          }
-
-          //alert(JSON.stringify(result));
-          // TODO use result
-          var result = JSON.stringify(result, null, 2);
-
-          myresult = JSON.parse(result);
-
-          genderresult = myresult['face'][0]['attribute']['gender']['value'];
-          ageresult = myresult['face'][0]['attribute']['age']['value'];
-          raceresult = myresult['face'][0]['attribute']['race']['value'];
-
-
-          //result2a = JSON.parse(result2);
-          //result2b = result2a['gender'];
-
-          mygender = JSON.stringify(genderresult);
-          myrace = JSON.stringify(raceresult);
-          myage = JSON.stringify(ageresult);
-
-          //document.getElementById('response').innerHTML = result;
-          //document.getElementById('response').appendChild("hello")
-
-
-          //document.getElementById('poophead').innerHTML = "hello";
-          document.getElementById('loading').innerHTML = "Done!";
-          //document.getElementById('cornmaster2').innerHTML = result3;
-
-          //document.getElementById('age').innerHTML = result3;
-          document.getElementById('gender').innerHTML = mygender;
-          document.getElementById('race').innerHTML = myrace;
-          document.getElementById('age').innerHTML = myage;
-          //document.getElementById('race').innerHTML = myrace;
-
-          document.getElementById('mypicture').src = myimageurl;
-          console.log(document.getElementById('mypicture').src);
-
-
-          //document.getElementById('response').innerHTML = "hello";
-          //document.getElementById('response').innerHTML = JSON.stringify(result, null, 2);
-
-          //parse the JSON
-
-        });
-      })();
-
-
-
-
-
-
-
-
-
-
-
-
-}
-
-
-
 /* Once the DOM is ready... */
 window.addEventListener('DOMContentLoaded', function() {
     /* ...query for the active tab... */
@@ -95,8 +15,98 @@ window.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-//console.log(document.getElementById('mypicture').src);
+/* Update the relevant fields in the chrome popup with the relevant data */
+function setDOMInfo(info) {
+    document.getElementById('total').textContent = info.profile_pic;
+    document.getElementById('mypicture').src = info.profile_pic;
+    //document.getElementById('userid').textContent = info.user_id;
 
+    //facial recognition stuff
+    console.log(document.getElementById('mypicture').src);
+    var myimageurl = document.getElementById('mypicture').src
+    var api = new FacePP('0ef14fa726ce34d820c5a44e57fef470', '4Y9YXOMSDvqu1Ompn9NSpNwWQFHs1hYD');
+    api.request('detection/detect', {
+      url: myimageurl
+    }, function(err, result) {
+      if (err) {
+        return;
+      }
+
+      var result = JSON.stringify(result, null, 2);
+      var myresult = JSON.parse(result);
+
+      genderresult = myresult['face'][0]['attribute']['gender']['value'];
+      ageresult = myresult['face'][0]['attribute']['age']['value'];
+      raceresult = myresult['face'][0]['attribute']['race']['value'];
+
+      mygender = JSON.stringify(genderresult);
+      myrace = JSON.stringify(raceresult);
+      myage = JSON.stringify(ageresult);
+
+      document.getElementById('loading').innerHTML = "Done!";
+      document.getElementById('gender').innerHTML = mygender;
+      document.getElementById('race').innerHTML = myrace;
+      document.getElementById('age').innerHTML = myage;
+      document.getElementById('mypicture').src = myimageurl;
+
+      console.log(document.getElementById('mypicture').src);
+
+      //sample dust test
+
+      /*
+      var data = {
+        "title": "Famous People", 
+        "names" : [{ "name": "Larry" },{ "name": "Curly" },{ "name": "Moe" }]
+      }
+      
+      var source   = $("#entry-template").html();
+      
+      var compiled = dust.compile(source, "intro");
+      dust.loadSource(compiled);
+      
+      dust.render("intro", data, function(err, out) {
+          $("#entry-template").html(out);
+      });  
+      */
+
+      //parse jymbii output
+
+      $.ajax({
+        url: "sample_data.json",
+        success: function (data) {
+          console.log(data);
+          var jymbii_data = JSON.parse(data);
+
+          var source   = $("#jymbii-template").html();
+      
+          var compiled = dust.compile(source, "jymbii");
+          dust.loadSource(compiled);
+      
+          dust.render("jymbii", jymbii_data, function(err, out) {
+          $("#jymbii-template").html(out);
+
+      });  
+
+
+
+
+        }
+      });
+
+
+
+      console.log(jymbii_data);
+      
+
+      
+      
+
+
+
+    });
+}
+
+// Facial recognition API
 // Generated by CoffeeScript 1.6.3
 (function() {
   var __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
@@ -273,63 +283,5 @@ window.addEventListener('DOMContentLoaded', function() {
 }).call(this);
 
 
-/*
-
- (function() {
-        //console.log(document.getElementById('mypicture').src);
-        var myimageurl = "https://spdy.linkedin.com/media/p/1/000/1f1/0ab/09f5ca7.jpg"
-        var api = new FacePP('0ef14fa726ce34d820c5a44e57fef470', '4Y9YXOMSDvqu1Ompn9NSpNwWQFHs1hYD');
-        api.request('detection/detect', {
-          url: myimageurl
-        }, function(err, result) {
-          if (err) {
-            // TODO handle error
-            return;
-          }
-
-          //alert(JSON.stringify(result));
-          // TODO use result
-          var result = JSON.stringify(result, null, 2);
-
-          myresult = JSON.parse(result);
-
-          genderresult = myresult['face'][0]['attribute']['gender']['value'];
-          ageresult = myresult['face'][0]['attribute']['age']['value'];
-          raceresult = myresult['face'][0]['attribute']['race']['value'];
-
-
-          //result2a = JSON.parse(result2);
-          //result2b = result2a['gender'];
-
-          mygender = JSON.stringify(genderresult);
-          myrace = JSON.stringify(raceresult);
-          myage = JSON.stringify(ageresult);
-
-          //document.getElementById('response').innerHTML = result;
-          //document.getElementById('response').appendChild("hello")
-
-
-          //document.getElementById('poophead').innerHTML = "hello";
-          document.getElementById('loading').innerHTML = "Done!";
-          //document.getElementById('cornmaster2').innerHTML = result3;
-
-          //document.getElementById('age').innerHTML = result3;
-          document.getElementById('gender').innerHTML = mygender;
-          document.getElementById('race').innerHTML = myrace;
-          document.getElementById('age').innerHTML = myage;
-          //document.getElementById('race').innerHTML = myrace;
-
-          document.getElementById('mypicture').src = myimageurl;
-          console.log(document.getElementById('mypicture').src);
-
-
-          //document.getElementById('response').innerHTML = "hello";
-          //document.getElementById('response').innerHTML = JSON.stringify(result, null, 2);
-
-          //parse the JSON
-
-        });
-      })();
-*/
 
 

@@ -1,0 +1,1 @@
+curli --pretty-print "d2://jobsForYou/sourceMemberId=164883249?doNotServeResultsFromCache=true&q=jobsForYou&iAmWillingToWaitForResultComputationIfCacheMisses=true&includePreferencesInMetadata=true&start=10&count=10&decorateResults=true" --fabric prod-lva1

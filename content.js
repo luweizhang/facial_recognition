@@ -9,16 +9,16 @@ chrome.runtime.sendMessage({
 chrome.runtime.onMessage.addListener(function(msg, sender, response) {
     /* First, validate the message's structure */
     if ((msg.from === 'popup') && (msg.subject === 'DOMInfo')) {
-        /* Collect the necessary data 
-         * (For your specific requirements `document.querySelectorAll(...)`
-         *  should be equivalent to jquery's `$(...)`) */
+        /* Here I need to pass in the user_id so that I can call the JYMBII rest API */ 
         var domInfo = {
-            total:   document.querySelectorAll('.profile-picture img')[0].src,
-            inputs:  document.getElementById("control_gen_4").childNodes[0].src,
-            buttons: document.querySelectorAll('button').length
+            profile_pic: document.querySelectorAll('.profile-picture img')[0].src,
+            profile_user_id: Number(document.querySelectorAll('.masthead')[0].id.match(/\d+/)),
+            my_user_id: document.querySelectorAll('sessionId') //I'm not sure exactly how to get this variable but this is a start. 
         };
         /* Directly respond to the sender (popup), 
          * through the specified callback */
         response(domInfo);
     }
 });
+
+
