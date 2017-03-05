@@ -9,13 +9,13 @@
 
     "background": {
         "persistent": false,
-        "scripts": ["background.js", "jquery-1.12.2.js", "dust-full.js"]
+        "scripts": ["core_js/background.js", "js/jquery-1.12.2.js", "js/dust-full.js"]
         //"scripts": ["background.js"]
     },
 
     "content_scripts": [{
         "matches":    ["<all_urls>"],
-        "js":         ["content.js"],
+        "js":         ["core_js/content.js"],
         "run_at":     "document_idle",
         "all_frames": false
     }],
