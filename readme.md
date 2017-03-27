@@ -1,4 +1,4 @@
-#Facial recognition chrome extension
+# Facial recognition chrome extension
 
 Here is a simple chrome extension that runs facial recognition algorithms on your linkedin profile pic.  
 
